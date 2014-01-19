@@ -29,10 +29,10 @@ class FTPTest(unittest.TestCase):
             eq_(len(files), num_expected_files)
 
         # get all files
-        __get_and_test(path='/flatfile', since=None, num_expected_files=2)
+        __get_and_test(path='/flatfile', since=None, num_expected_files=3)
 
         # get one file - using "since"
-        __get_and_test(path='/flatfile', since=datetime.datetime(2014, 1, 7, 0, 42), num_expected_files=1)
+        __get_and_test(path='/flatfile', since=datetime.datetime(2014, 1, 7, 0, 42), num_expected_files=2)
 
         # get zero files - using "since"
         __get_and_test(path='/flatfile', since=datetime.datetime(2014, 2, 1), num_expected_files=0)

@@ -1,49 +1,80 @@
-from datetime import datetime
-from tinymodel import TinyModel, FieldDef
+import datetime
+from pprint import pformat
+
+ATTR_AS_INT = lambda x: int(x)
+ATTR_AS_FLOAT = lambda x: float(x)
+ATTR_AS_DATETIME = lambda x: datetime.datetime.strptime(x, '%Y-%m-%d')
+
+class OperativeModel(object):
+    """
+    Parent class for all operative models
+
+    """
+    def __init__(self, report_row):
+        attribs = {self.REPORT_MAPPINGS[k]: v for k, v in report_row.items() if k in self.REPORT_MAPPINGS}
+        for k, v in attribs.items():
+            if k in self.ATTR_TRANSLATIONS:
+                try:
+                    v = self.ATTR_TRANSLATIONS[k](v)
+                except ValueError:
+                    v = None
+            setattr(self, k, v)
+
+    def __repr__(self):
+        return pformat(self.__dict__)
 
 
-class Advertiser(TinyModel):
-
+class Advertiser(OperativeModel):
     """
     Represents an Operative Advertiser.
+
     """
+    REPORT_MAPPINGS = {'Advertiser ID': 'id',
+                       'Advertiser Name': 'name'}
 
-    FIELD_DEFS = [
-        FieldDef(title='id', allowed_types=[unicode, str, long, int, type(None)]),
-        FieldDef(title='name', allowed_types=[unicode, str]),
-    ]
+    ATTR_TRANSLATIONS = {}
 
 
-class Order(TinyModel):
-
+class Order(OperativeModel):
     """
     Represents an Operative order.
+
     """
+    REPORT_MAPPINGS = {'Order ID': 'id',
+                       'Order Name': 'name',
+                       'Order Start Date': 'start_date',
+                       'Order End Date': 'end_date'}
 
-    FIELD_DEFS = [
-        FieldDef(title='advertiser', allowed_types=['operative.models.Advertiser'], relationship='has_one'),
-        FieldDef(title='id', allowed_types=[long, int, type(None)]),
-        FieldDef(title='name', allowed_types=[unicode, str]),
-        FieldDef(title='start_date', allowed_types=[datetime]),
-        FieldDef(title='end_date', allowed_types=[datetime]),
-    ]
+    ATTR_TRANSLATIONS = {'id': ATTR_AS_INT,
+                         'start_date': ATTR_AS_DATETIME,
+                         'end_date': ATTR_AS_DATETIME,}
 
+    def __init__(self, report_row):
+        OperativeModel.__init__(self, report_row)
+        self.advertiser = Advertiser(report_row)
 
-class LineItem(TinyModel):
-
+class LineItem(OperativeModel):
     """
     Represents an Operative Line Item.
-    """
 
-    FIELD_DEFS = [
-        FieldDef(title='order', allowed_types=['operative.models.Order'], relationship='has_one'),
-        FieldDef(title='id', allowed_types=[long, int, type(None)]),
-        FieldDef(title='name', allowed_types=[unicode, str]),
-        FieldDef(title='start_date', allowed_types=[datetime]),
-        FieldDef(title='end_date', allowed_types=[datetime]),
-        FieldDef(title='action', allowed_types=[long, int, type(None)]),
-        FieldDef(title='quantity', allowed_types=[long, int, type(None)]),
-        FieldDef(title='unit_cost', allowed_types=[long, int, type(None)]),
-        FieldDef(title='cost_type', allowed_types=[unicode, str]),
-        FieldDef(title='cost', allowed_types=[float]),
-    ]
+    """
+    REPORT_MAPPINGS = {'Line Item ID': 'id',
+                       'Line Item Name': 'name',
+                       'Line Item Start Date': 'start_date',
+                       'Line Item End Date': 'end_date',
+                       'Line Item Action': 'action',
+                       'Quantity': 'quantity',
+                       'Unit Cost': 'unit_cost',
+                       'Cost Type': 'cost_type',
+                       'Cost': 'cost',}
+
+    ATTR_TRANSLATIONS = {'id': ATTR_AS_INT,
+                         'start_date': ATTR_AS_DATETIME,
+                         'end_date': ATTR_AS_DATETIME,
+                         'quantity': ATTR_AS_INT,
+                         'unit_cost': ATTR_AS_FLOAT,
+                         'cost': ATTR_AS_FLOAT,}
+
+    def __init__(self, report_row):
+        OperativeModel.__init__(self, report_row)
+        self.order = Order(report_row)

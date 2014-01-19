@@ -1,0 +1,13 @@
+(dp1
+S'expected_value'
+p2
+S'S"{\'action\': \'UPDATE\',\\n \'cost\': 0.0,\\n \'cost_type\': \'CPC\',\\n \'end_date\': datetime.datetime(2014, 1, 31, 0, 0),\\n \'id\': 23605,\\n \'name\': \'109234-1_Social Content Seeding\',\\n \'order\': {\'advertiser\': {\'id\': \'Facebook\', \'name\': \'Facebook\'},\\n \'end_date\': datetime.datetime(2014, 1, 31, 0, 0),\\n \'id\': None,\\n \'name\': \'10077_TESTING_LISA_TEST APRIL\',\\n \'start_date\': datetime.datetime(2013, 11, 3, 0, 0)},\\n \'quantity\': 11111,\\n \'start_date\': datetime.datetime(2013, 11, 3, 0, 0),\\n \'unit_cost\': 0.0}"\np0\n.'
+p3
+sS'call_hash'
+p4
+S'afca726ef3e53be938831e598f6a343248dc4ccc'
+p5
+sS'packet_num'
+p6
+I0
+s.

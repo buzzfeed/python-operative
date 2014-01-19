@@ -1,0 +1,13 @@
+(dp1
+S'expected_value'
+p2
+S'S"{\'action\': \'UPDATE\',\\n \'cost\': 0.1,\\n \'cost_type\': \'CPC\',\\n \'end_date\': datetime.datetime(2013, 5, 27, 0, 0),\\n \'id\': 9358,\\n \'name\': \'104114-1_Social Content Seeding - Stumble/Twitter/Pinterest\',\\n \'order\': {\'advertiser\': {\'id\': \'Twitter\', \'name\': \'Twitter\'},\\n \'end_date\': datetime.datetime(2013, 5, 27, 0, 0),\\n \'id\': None,\\n \'name\': \'10368_The Charles Koch Institute: Koch Institute totally non-partisan BuzzFeed Brews Event\',\\n \'start_date\': datetime.datetime(2013, 5, 6, 0, 0)},\\n \'quantity\': 44000,\\n \'start_date\': datetime.datetime(2013, 5, 6, 0, 0),\\n \'unit_cost\': 0.0}"\np0\n.'
+p3
+sS'call_hash'
+p4
+S'15314e08dfe1589bce66b168a1d15f09e7dfd191'
+p5
+sS'packet_num'
+p6
+I0
+s.

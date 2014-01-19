@@ -1,0 +1,25 @@
+(dp1
+S'args'
+p2
+S"(S'FTPConnection'\np0\ntp1\n."
+p3
+sS'methodname'
+p4
+S'patch_with'
+p5
+sS'packet_num'
+p6
+I0
+sS'returnval'
+p7
+S'(lp0\nccopy_reg\n_reconstructor\np1\n(coperative\nFTPFile\np2\ncdill.dill\n_load_type\np3\n(S\'ObjectType\'\np4\ntp5\nRp6\nNtp7\nRp8\n(dp9\nS\'last_modified\'\np10\ncdatetime\ndatetime\np11\n(S\'\\x07\\xde\\x01\\x07\\x00)2\\x00\\x00\\x00\'\np12\ntp13\nRp14\nsS\'data\'\np15\n(iStringIO\nStringIO\np16\n(dp17\nS\'softspace\'\np18\nI0\nsS\'buflist\'\np19\n(lp20\nS\'"Advertiser Name","Advertiser ID","Order Name","Order ID","Line Item Action","Line Item ID","Line Item Name","Group Line Item","Order Start Date","Order End Date","Line Item Start Date","Line Item End Date","Quantity","Unit Cost","Cost Type","Cost","Locator 1 ID","Locator 2 ID","Locator 3 ID","Locator 4 ID","Size ID","Keyword","Country","City","Postal Code","DMA","Area Code","Exclusion Category","StateProvince","Day Of Week","Time Of Day","Creative Status","Creative Action","Creative Name","Creative File Name","Click URL"\\n"Facebook","Facebook","10368_The Charles Koch Institute: Koch Institute totally non-partisan BuzzFeed Brews Event",,"UPDATE","9357","104113-1_Social Content Seeding - Facebook","N","2013-05-06","2013-05-27","2013-05-06","2013-05-27","29333","0.0","CPC","0.6","1",,,,"1",,"","","","","","","","","",,,,,,,,,,,,,,,,,,,\\n\'\np21\nasS\'pos\'\np22\nI845\nsS\'len\'\np23\nI845\nsS\'closed\'\np24\nI00\nsS\'buf\'\np25\nS\'\'\np26\nsbsS\'name\'\np27\nS\'Operative_Push_2014-01-06_2984142.csv\'\np28\nsbag1\n(g2\ng6\nNtp29\nRp30\n(dp31\ng10\ng11\n(S\'\\x07\\xde\\x01\\x07\\x00*\\x05\\x00\\x00\\x00\'\np32\ntp33\nRp34\nsg15\n(iStringIO\nStringIO\np35\n(dp36\ng18\nI0\nsg19\n(lp37\nS\'"Advertiser Name","Advertiser ID","Order Name","Order ID","Line Item Action","Line Item ID","Line Item Name","Group Line Item","Order Start Date","Order End Date","Line Item Start Date","Line Item End Date","Quantity","Unit Cost","Cost Type","Cost","Locator 1 ID","Locator 2 ID","Locator 3 ID","Locator 4 ID","Size ID","Keyword","Country","City","Postal Code","DMA","Area Code","Exclusion Category","StateProvince","Day Of Week","Time Of Day","Creative Status","Creative Action","Creative Name","Creative File Name","Click URL"\\n"Twitter","Twitter","10368_The Charles Koch Institute: Koch Institute totally non-partisan BuzzFeed Brews Event",,"UPDATE","9358","104114-1_Social Content Seeding - Stumble/Twitter/Pinterest","N","2013-05-06","2013-05-27","2013-05-06","2013-05-27","44000","0.0","CPC","0.1","1",,,,"1",,"","","","","","","","","",,,,,,,,,,,,,,,,,,,\\n\'\np38\nasg22\nI860\nsg23\nI860\nsg24\nI00\nsg25\ng26\nsbsg27\nS\'Operative_Push_2014-01-06_2984144.csv\'\np39\nsbag1\n(g2\ng6\nNtp40\nRp41\n(dp42\ng10\ng11\n(S\'\\x07\\xde\\x01\\x12\\x14\\r\\x10\\x00\\x00\\x00\'\np43\ntp44\nRp45\nsg15\n(iStringIO\nStringIO\np46\n(dp47\ng18\nI0\nsg19\n(lp48\nS\'"Advertiser Name","Advertiser ID","Order Name","Order ID","Line Item Action","Line Item ID","Line Item Name","Group Line Item","Order Start Date","Order End Date","Line Item Start Date","Line Item End Date","Quantity","Unit Cost","Cost Type","Cost","Locator 1 ID","Locator 2 ID","Locator 3 ID","Locator 4 ID","Size ID","Keyword","Country","City","Postal Code","DMA","Area Code","Exclusion Category","StateProvince","Day Of Week","Time Of Day","Creative Status","Creative Action","Creative Name","Creative File Name","Click URL"\\n"Facebook","Facebook","10077_TESTING_LISA_TEST APRIL",,"UPDATE","23605","109234-1_Social Content Seeding","N","2013-11-03","2014-01-31","2013-11-03","2014-01-31","11111","0.0","CPC","0.0","1",,,,"1",,"","","","","","","","","",,,,,,,,,,,,,,,,,,,\\n\'\np49\nasg22\nI774\nsg23\nI774\nsg24\nI00\nsg25\ng26\nsbsg27\nS\'Operative_Push_2014-01-18_3070168.csv\'\np50\nsba.'
+p8
+sS'hash'
+p9
+S'fcba5805dbfb817ad99b98f0b527ee6b0fac3f30'
+p10
+sS'stack'
+p11
+S'patch_with util.py get_stack facade.py cache patch.py patch_with __init__.py get_report_files report_test.py __get_and_test report_test.py test_line_item_report patch.py patched_test '
+p12
+s.

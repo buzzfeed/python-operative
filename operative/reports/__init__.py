@@ -22,7 +22,7 @@ class Report(object):
             Initializes the object and set attributes.
 
             :param FTPFile raw_file: The raw file from the FTP server.
-            :param [TinyModel] data: A list of models parsed from the raw file.
+            :param [OperativeModel] data: A list of models parsed from the raw file.
 
             """
             self.raw_file = raw_file

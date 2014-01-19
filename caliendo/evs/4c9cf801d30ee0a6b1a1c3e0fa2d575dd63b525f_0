@@ -1,0 +1,13 @@
+(dp1
+S'expected_value'
+p2
+S"(lp0\nccopy_reg\n_reconstructor\np1\n(coperative.models\nLineItem\np2\ncdill.dill\n_load_type\np3\n(S'ObjectType'\np4\ntp5\nRp6\nNtp7\nRp8\n(dp9\nS'cost_type'\np10\nS'CPC'\np11\nsS'name'\np12\nS'109234-1_Social Content Seeding'\np13\nsS'end_date'\np14\ncdatetime\ndatetime\np15\n(S'\\x07\\xde\\x01\\x1f\\x00\\x00\\x00\\x00\\x00\\x00'\np16\ntp17\nRp18\nsS'id'\np19\nI23605\nsS'cost'\np20\nF0.0\nsS'unit_cost'\np21\nF0.0\nsS'action'\np22\nS'UPDATE'\np23\nsS'order'\np24\ng1\n(coperative.models\nOrder\np25\ng6\nNtp26\nRp27\n(dp28\ng12\nS'10077_TESTING_LISA_TEST APRIL'\np29\nsS'advertiser'\np30\ng1\n(coperative.models\nAdvertiser\np31\ng6\nNtp32\nRp33\n(dp34\ng12\nS'Facebook'\np35\nsg19\nS'Facebook'\np36\nsbsS'start_date'\np37\ng15\n(S'\\x07\\xdd\\x0b\\x03\\x00\\x00\\x00\\x00\\x00\\x00'\np38\ntp39\nRp40\nsg14\ng15\n(S'\\x07\\xde\\x01\\x1f\\x00\\x00\\x00\\x00\\x00\\x00'\np41\ntp42\nRp43\nsg19\nNsbsg37\ng15\n(S'\\x07\\xdd\\x0b\\x03\\x00\\x00\\x00\\x00\\x00\\x00'\np44\ntp45\nRp46\nsS'quantity'\np47\nI11111\nsba."
+p3
+sS'call_hash'
+p4
+S'4c9cf801d30ee0a6b1a1c3e0fa2d575dd63b525f'
+p5
+sS'packet_num'
+p6
+I0
+s.
