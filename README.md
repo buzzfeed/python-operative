@@ -49,7 +49,7 @@ Usage
 Using **python-operative** to retrieve data from an Operative flatfile report is very straightforward.
 
 First step is to define an FTPCredentials object:
-```
+```python
 import operative
 
 FTP_LOGIN_DICT = {
@@ -62,7 +62,7 @@ ftp_creds = operative.FTPCredentials(**FTP_LOGIN_DICT)
 ```
 
 From there you can pull an array of Report objects:
-```
+```python
 import datetime
 from operative.reports.line_item_report import LineItemReport
 
