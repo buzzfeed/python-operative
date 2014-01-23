@@ -11,7 +11,7 @@ except ImportError:
 
 setup(
     name='python-operative',
-    version='0.1.0',
+    version='0.1.1',
     author='Jane Kelly & Jeff Revesz',
     author_email='jane.kelly@buzzfeed.com',
     packages=find_packages(),
